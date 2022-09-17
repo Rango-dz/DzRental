@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "h84bhakj",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "DZRental"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "@sanity/google-maps-input"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
